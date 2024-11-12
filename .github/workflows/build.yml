@@ -9,8 +9,10 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  build-linux:
-    runs-on: ubuntu-latest
+  build-linux-macos:
+    runs-on:
+      - ubuntu-latest
+      - macOS-latest
     steps:
       - name: checkout
         uses: actions/checkout@v4
