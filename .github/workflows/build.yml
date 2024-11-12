@@ -34,7 +34,7 @@ jobs:
       - name: install clang/llvm
         uses: KyleMayes/install-llvm-action@v2.0.3
         with:
-          version: "18.0"
+          version: "18.1.8"
           directory: "${{ runner.temp }}/llvm-18"
       - name: configure clang/llvm environment
         run: echo "LIBCLANG_PATH=$((gcm clang).source -replace "clang.exe")" >> $env:GITHUB_ENV
